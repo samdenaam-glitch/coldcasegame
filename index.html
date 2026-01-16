@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Case Files - Detective Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <h1><i class="fas fa-folder-open"></i> COLD CASE FILES</h1>
+            <p class="loading-subtitle">Archived Investigations Division</p>
+            <div class="loading-progress">
+                <div class="loading-bar">
+                    <div id="loading-bar-fill"></div>
+                </div>
+                <div id="loading-status">Initializing game engine...</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- HEADER -->
+        <header class="game-header">
+            <div class="header-left">
+                <h1><i class="fas fa-folder-open"></i> COLD CASE FILES</h1>
+                <p class="subtitle">Archived Investigations Division</p>
+            </div>
+            <div class="header-right">
+                <div class="player-info">
+                    <div class="player-rank">
+                        <span class="rank-label">RANK:</span>
+                        <span id="rank" class="rank-value">ROOKIE DETECTIVE</span>
+                    </div>
+                    <div class="player-stats">
+                        <span class="stat" title="Cases Solved"><i class="fas fa-check-circle"></i> <span id="cases-solved">0</span></span>
+                        <span class="stat" title="Cold Case Points"><i class="fas fa-star"></i> <span id="ccp">100</span> CCP</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN GAME AREA -->
+        <main class="game-main">
+            <!-- LEFT PANEL: CASE EVIDENCE -->
+            <section class="panel evidence-panel">
+                <div class="panel-header">
+                    <h2><i class="fas fa-box-archive"></i> CASE EVIDENCE</h2>
+                    <div class="case-info">
+                        <span id="case-id">CCF-1987-045</span>
+                        <span id="case-year">1987</span>
+                        <span id="case-difficulty" class="difficulty-beginner">BEGINNER</span>
+                    </div>
+                </div>
+                
+                <div class="panel-content">
+                    <!-- CASE TITLE -->
+                    <div class="case-title-container">
+                        <h3 id="case-title">THE VANISHING VIOLINIST</h3>
+                        <p id="case-summary" class="case-summary">
+                            Loading case data...
+                        </p>
+                    </div>
+                    
+                    <!-- EVIDENCE TABS -->
+                    <div class="evidence-tabs">
+                        <button class="tab-btn active" data-tab="photos"><i class="fas fa-camera"></i> PHOTOS</button>
+                        <button class="tab-btn" data-tab="documents"><i class="fas fa-file-alt"></i> DOCUMENTS</button>
+                        <button class="tab-btn" data-tab="forensics"><i class="fas fa-microscope"></i> FORENSICS</button>
+                    </div>
+                    
+                    <!-- EVIDENCE CONTENT -->
+                    <div class="evidence-content">
+                        <!-- Photos Tab Content -->
+                        <div id="photos-tab" class="tab-content active">
+                            <div class="evidence-grid">
+                                <!-- Evidence will load here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Documents Tab Content -->
+                        <div id="documents-tab" class="tab-content">
+                            <div class="document-list">
+                                <!-- Documents will load here -->
+                            </div>
+                        </div>
+                        
+                        <!-- Forensics Tab Content -->
+                        <div id="forensics-tab" class="tab-content">
+                            <div class="forensics-list">
+                                <!-- Forensics will load here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RIGHT PANEL: WITNESSES & NOTES -->
+            <section class="panel interaction-panel">
+                <!-- WITNESSES SECTION -->
+                <div class="witness-section">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-user-check"></i> WITNESS STATEMENTS</h2>
+                    </div>
+                    
+                    <div class="witness-container">
+                        <div class="witness active" data-witness="stage-manager">
+                            <div class="witness-header">
+                                <h3><i class="fas fa-user-tie"></i> STAGE MANAGER</h3>
+                                <span class="witness-role">Loading...</span>
+                            </div>
+                            <div class="witness-testimony">
+                                <p>Loading testimony...</p>
+                            </div>
+                            <div class="witness-questions">
+                                <h4>QUESTIONS TO ASK:</h4>
+                                <div class="question-buttons">
+                                    <button class="question-btn" data-question="1" data-witness-index="0" data-question-index="0">Loading...</button>
+                                    <button class="question-btn" data-question="2" data-witness-index="0" data-question-index="1">Loading...</button>
+                                    <button class="question-btn" data-question="3" data-witness-index="0" data-question-index="2">Loading...</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="witness" data-witness="understudy">
+                            <div class="witness-header">
+                                <h3><i class="fas fa-music"></i> UNDERSTUDY</h3>
+                                <span class="witness-role">Loading...</span>
+                            </div>
+                            <div class="witness-testimony">
+                                <p>Loading testimony...</p>
+                            </div>
+                            <div class="witness-questions">
+                                <h4>QUESTIONS TO ASK:</h4>
+                                <div class="question-buttons">
+                                    <button class="question-btn" data-question="4" data-witness-index="1" data-question-index="0">Loading...</button>
+                                    <button class="question-btn" data-question="5" data-witness-index="1" data-question-index="1">Loading...</button>
+                                    <button class="question-btn" data-question="6" data-witness-index="1" data-question-index="2">Loading...</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Witness Toggle -->
+                        <div class="witness-nav">
+                            <button id="prev-witness" class="nav-btn"><i class="fas fa-chevron-left"></i> Previous</button>
+                            <span class="witness-counter">Witness 1 of 2</span>
+                            <button id="next-witness" class="nav-btn">Next <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- NOTES & SOLVE SECTION -->
+                <div class="notes-section">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-clipboard"></i> DETECTIVE'S NOTEPAD</h2>
+                    </div>
+                    
+                    <div class="notes-container">
+                        <textarea id="detective-notes" placeholder="Record your observations here..."></textarea>
+                        
+                        <div class="clue-highlights">
+                            <h4>KEY CLUES IDENTIFIED:</h4>
+                            <ul id="clue-list">
+                                <li><i class="fas fa-circle"></i> Loading clues...</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="action-buttons">
+                            <button id="hint-btn" class="action-btn hint-btn">
+                                <i class="fas fa-lightbulb"></i> GET HINT (25 CCP)
+                            </button>
+                            <button id="solve-btn" class="action-btn solve-btn">
+                                <i class="fas fa-check-double"></i> SOLVE CASE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="game-footer">
+            <div class="case-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 40%"></div>
+                </div>
+                <span class="progress-text">INVESTIGATION PROGRESS: 40%</span>
+            </div>
+            <div class="footer-controls">
+                <button id="select-case-btn" class="footer-btn"><i class="fas fa-folder-open"></i> SELECT CASE</button>
+                <button id="new-case-btn" class="footer-btn"><i class="fas fa-forward"></i> NEXT CASE</button>
+                <button id="save-btn" class="footer-btn"><i class="fas fa-save"></i> SAVE</button>
+                <button id="load-btn" class="footer-btn"><i class="fas fa-folder-open"></i> LOAD</button>
+                <button id="help-btn" class="footer-btn"><i class="fas fa-question-circle"></i> HELP</button>
+            </div>
+        </footer>
+    </div>
+
+    <!-- CASE SELECTION MODAL -->
+    <div id="case-selection-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-folder-open"></i> CASE ARCHIVES</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="case-list-container">
+                    <!-- Cases will load here -->
+                </div>
+                <div class="case-selection-actions">
+                    <button id="close-case-select" class="action-btn hint-btn">
+                        <i class="fas fa-times"></i> CLOSE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SOLVE CASE MODAL -->
+    <div id="solve-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-gavel"></i> SUBMIT SOLUTION</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="solution-form">
+                    <div class="form-group">
+                        <label for="culprit-select">PRIMARY SUSPECT:</label>
+                        <select id="culprit-select">
+                            <option value="">Select suspect...</option>
+                            <option value="rival">Rival Musician</option>
+                            <option value="manager">Stage Manager</option>
+                            <option value="understudy">Understudy</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="motive-select">MOTIVE:</label>
+                        <select id="motive-select">
+                            <option value="">Select motive...</option>
+                            <option value="jealousy">Professional Jealousy</option>
+                            <option value="revenge">Personal Revenge</option>
+                            <option value="financial">Financial Gain</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="method-select">METHOD:</label>
+                        <select id="method-select">
+                            <option value="">Select method...</option>
+                            <option value="kidnap">Kidnapping</option>
+                            <option value="voluntary">Voluntary Disappearance</option>
+                            <option value="harm">Foul Play</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="final-theory">FINAL THEORY:</label>
+                        <textarea id="final-theory" placeholder="Explain your reasoning..."></textarea>
+                    </div>
+                    
+                    <button id="submit-solution" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> SUBMIT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HINT MODAL -->
+    <div id="hint-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-lightbulb"></i> HINT</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="hint-content">
+                    <p id="hint-text">Loading hint...</p>
+                    <div class="hint-cost">
+                        <button id="confirm-hint" class="confirm-btn">
+                            <i class="fas fa-check"></i> GET HINT (25 CCP)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load JavaScript -->
+    <script src="game.js"></script>
+    
+    <!-- Simple Initialization -->
+    <script>
+        console.log('Cold Case Files - Starting...');
+        
+        // Hide loading screen after a moment
+        setTimeout(function() {
+            const loadingScreen = document.getElementById('loading-screen');
+            if (loadingScreen) {
+                loadingScreen.style.opacity = '0';
+                setTimeout(function() {
+                    loadingScreen.style.display = 'none';
+                    
+                    // Initialize the game
+                    if (typeof initGame === 'function') {
+                        try {
+                            const success = initGame();
+                            console.log('Game initialized:', success);
+                            
+                            // Show welcome message
+                            if (typeof showNotification === 'function') {
+                                setTimeout(function() {
+                                    showNotification('🔍 Case loaded. Start investigating!', 'info');
+                                }, 500);
+                            }
+                        } catch (error) {
+                            console.error('Game init error:', error);
+                        }
+                    }
+                }, 500);
+            }
+        }, 1500); // Show loading screen for 1.5 seconds
+    </script>
+</body>
+</html>
