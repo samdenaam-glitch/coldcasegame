@@ -1,0 +1,84 @@
+{
+    "game": {
+        "title": "Cold Case Files",
+        "version": "1.0.0",
+        "author": "Detective Division",
+        "defaultLanguage": "en"
+    },
+    
+    "difficulty": {
+        "beginner": {
+            "startingCCP": 100,
+            "hintCostMultiplier": 1.0,
+            "clueDiscoveryBonus": 15,
+            "witnessHonesty": 100,
+            "maxCasesUnlocked": 3
+        },
+        "intermediate": {
+            "startingCCP": 75,
+            "hintCostMultiplier": 1.5,
+            "clueDiscoveryBonus": 10,
+            "witnessHonesty": 80,
+            "maxCasesUnlocked": 2
+        },
+        "expert": {
+            "startingCCP": 50,
+            "hintCostMultiplier": 2.0,
+            "clueDiscoveryBonus": 5,
+            "witnessHonesty": 60,
+            "maxCasesUnlocked": 1
+        }
+    },
+    
+    "points": {
+        "caseSolved": {
+            "perfect": 100,
+            "good": 70,
+            "partial": 50,
+            "failed": 10
+        },
+        "clueDiscovered": 10,
+        "questionAsked": 5,
+        "witnessInterviewed": 15,
+        "dailyLogin": 25
+    },
+    
+    "ranks": {
+        "rookie": { "minScore": 0, "title": "ROOKIE DETECTIVE" },
+        "detective": { "minScore": 200, "title": "DETECTIVE" },
+        "senior": { "minScore": 500, "title": "SENIOR DETECTIVE" },
+        "inspector": { "minScore": 1000, "title": "INSPECTOR" },
+        "chief": { "minScore": 2000, "title": "CHIEF INSPECTOR" }
+    },
+    
+    "ui": {
+        "theme": "dark",
+        "animationSpeed": "normal",
+        "autosaveInterval": 300,
+        "notifications": true,
+        "soundEffects": true,
+        "backgroundMusic": false
+    },
+    
+    "features": {
+        "enableMultiplayer": false,
+        "enableCaseCreator": false,
+        "enableAchievements": true,
+        "enableDailyCases": false,
+        "enableLeaderboards": false
+    },
+    
+    "limits": {
+        "maxSavedGames": 3,
+        "maxNotesLength": 5000,
+        "dailyHintLimit": 5,
+        "caseTimeLimit": null
+    },
+    
+    "debug": {
+        "unlockAllCases": false,
+        "infiniteCCP": false,
+        "showAllClues": false,
+        "skipTutorial": false
+    }
+}
