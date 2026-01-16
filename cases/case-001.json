@@ -1,0 +1,398 @@
+{
+    "id": "CCF-1987-045",
+    "title": "THE VANISHING VIOLINIST",
+    "year": 1987,
+    "difficulty": "BEGINNER",
+    "difficultyClass": "difficulty-beginner",
+    "unlockRequirement": 0,
+    "estimatedTime": "15-20 minutes",
+    "location": "Royal Symphony Hall, London",
+    
+    "summary": "Renowned violinist Evelyn Vance disappeared after her final performance at the Royal Symphony Hall on November 15, 1987. No ransom note, no witnesses, just an empty dressing room and a broken violin string. The case went cold after 3 months of investigation.",
+    
+    "backstory": "Evelyn Vance, 34, was at the peak of her career. Her final performance of the season was sold out, but she never took her final bow. Colleagues described her as 'distracted' in the days leading up to the disappearance. She had recently ended a professional partnership with fellow violinist Adrian Volkov, who was reportedly furious about being replaced.",
+    
+    "victim": {
+        "name": "Evelyn Vance",
+        "age": 34,
+        "occupation": "Concert Violinist",
+        "description": "Talented but private, known for her emotional performances. Recently signed a lucrative solo contract."
+    },
+    
+    "evidence": {
+        "photos": [
+            {
+                "id": "photo-1",
+                "title": "Crime Scene: Backstage Area",
+                "description": "Dressing room area showing overturned stool, scattered sheet music, and a single broken violin string (E-string) on the floor.",
+                "image": "backstage.jpg",
+                "clueId": "broken_string",
+                "examineText": "The stool is overturned as if someone stood up quickly. The violin string appears to be snapped, not cut. Sheet music for 'Requiem for a Lost Note' is scattered."
+            },
+            {
+                "id": "photo-2",
+                "title": "Victim's Dressing Room",
+                "description": "Room appears undisturbed except for open window. Personal belongings still present including purse, phone, and coat.",
+                "image": "dressing-room.jpg",
+                "clueId": "open_window",
+                "examineText": "Window opens to fire escape. No signs of forced entry. Purse contains £200 cash and credit cards - not a robbery."
+            },
+            {
+                "id": "photo-3",
+                "title": "Concert Poster",
+                "description": "Promotional poster for 'Final Performance of the Season' featuring Evelyn Vance.",
+                "image": "concert-poster.jpg",
+                "clueId": "concert_poster",
+                "examineText": "Date: November 15, 1987. Special note: 'Dedicated to my mentor, Professor Aris'. Someone has written 'LAST PERFORMANCE' in red ink across the bottom."
+            },
+            {
+                "id": "photo-4",
+                "title": "Backstage Log Page",
+                "description": "Sign-in sheet showing visitors on the night of disappearance.",
+                "image": "backstage-log.jpg",
+                "clueId": "visitor_log",
+                "examineText": "Four unauthorized signatures: 'J. Smith', 'A. Visitor', 'Guest', and 'Music Fan'. All appear to be written by the same hand based on similar 'J' formation."
+            }
+        ],
+        
+        "documents": [
+            {
+                "id": "doc-1",
+                "title": "CONCERT PROGRAM",
+                "content": "Royal Symphony Hall - November 15, 1987\n\nFinal Performance of the Season\nFeaturing Evelyn Vance\n\nProgram:\n1. Bach - Partita No. 2 in D minor\n2. Paganini - Caprice No. 24\n3. NEW PIECE: 'Requiem for a Lost Note' (World Premiere)\n\nSpecial Note: This performance is dedicated to Professor Mikhail Aris, Evelyn's mentor who passed away last year.\n\nAnnotations found in margins: 'He's here tonight', 'Can't do this anymore', 'The music must end'",
+                "clueId": "annotated_program",
+                "type": "program",
+                "examineText": "The handwritten annotations appear recent. 'He's here tonight' is circled. The word 'end' is underlined three times."
+            },
+            {
+                "id": "doc-2",
+                "title": "ANONYMOUS THREAT LETTER",
+                "content": "Postmarked: November 14, 1987\nNo return address\n\n'Your final performance will be memorable. Some notes are better left unplayed. Remember what happened to Aris.'\n\nHandwriting analysis: Right-handed, educated, likely male. Uses European-style '7' with crossbar.",
+                "clueId": "threat_letter",
+                "type": "letter",
+                "examineText": "Paper quality is high-grade stationery. Postmark shows Central London. Reference to 'Aris' connects to victim's deceased mentor."
+            },
+            {
+                "id": "doc-3",
+                "title": "BACKSTAGE PASS - GUEST",
+                "content": "Name: GUEST\nDate: Nov 15, 1987\nAccess: ALL AREAS\nIssued by: Stage Manager (Carlos Mendoza)\n\nNote: Pass #47. Security footage shows this pass was used by a tall man in a dark coat.",
+                "clueId": "guest_pass",
+                "type": "pass",
+                "examineText": "The word 'GUEST' is typed, not handwritten. Pass #47 was supposed to be for press, not general guests."
+            },
+            {
+                "id": "doc-4",
+                "title": "NEWSPAPER CLIPPING",
+                "content": "The London Times - November 10, 1987\n\n'VIOLINIST'S SOLO DEAL ANGERS FORMER DUET PARTNER'\n\nAdrian Volkov, 42, expressed 'disappointment' after being replaced by Evelyn Vance for the upcoming symphony season. 'After 5 years of partnership, this feels like a betrayal,' Volkov told reporters. Sources say the split was 'acrimonious' with financial disputes involved.",
+                "clueId": "newspaper_clipping",
+                "type": "news",
+                "examineText": "Article published 5 days before disappearance. Photo shows Volkov looking angry. Financial dispute mentioned."
+            }
+        ],
+        
+        "forensics": [
+            {
+                "id": "forensic-1",
+                "title": "FIBER ANALYSIS REPORT",
+                "content": "Evidence Item: Broken violin string (E-string)\n\nFindings:\n- String shows signs of being snapped under tension\n- Blue polyester fibers embedded in string winding\n- Fibers match known fabric: 'Royal Symphony Orchestra - Stagehand uniform, 1985-1987 issue'\n- Additional wool fibers: dark grey, high quality\n\nConclusion: Perpetrator was wearing a stagehand uniform or was in close contact with one.",
+                "clueId": "blue_fibers",
+                "type": "lab",
+                "examineText": "Stagehand uniforms are only issued to employees. Wool fibers suggest an overcoat was also worn."
+            },
+            {
+                "id": "forensic-2",
+                "title": "FINGERPRINT ANALYSIS",
+                "content": "Location: Dressing room window frame\n\nFindings:\n- 3 sets of unidentified prints\n- Print Set A: Right thumb, large (male), on outside of frame\n- Print Set B: Partial right index, on inside latch\n- Print Set C: Smudged, likely through gloves\n\nMatch Results:\n- No match in criminal database\n- Set A matches prints found on backstage water cooler (employee area)",
+                "clueId": "unidentified_prints",
+                "type": "lab",
+                "examineText": "Prints on inside suggest someone opened window from inside. Employee area access indicates insider knowledge."
+            },
+            {
+                "id": "forensic-3",
+                "title": "PHONE RECORDS (LAST 24 HOURS)",
+                "content": "Evelyn Vance's Mobile Phone\n\nNovember 14:\n- 10:15 AM: Incoming call - BLOCKED NUMBER (2 min)\n- 3:42 PM: Outgoing call - ADRIAN VOLKOV (8 min)\n- 7:30 PM: Incoming call - PROF. ARIS FOUNDATION (3 min)\n\nNovember 15 (Day of disappearance):\n- 9:00 AM: Text message to Melissa Chen: 'Can't talk now'\n- 5:30 PM: Last signal - Symphony Hall area\n- 8:15 PM: Phone powered off\n\nNote: Phone never recovered.",
+                "clueId": "phone_records",
+                "type": "records",
+                "examineText": "8-minute call with Volkov day before disappearance. Last text suggests she was avoiding someone."
+            }
+        ],
+        
+        "objects": [
+            {
+                "id": "object-1",
+                "title": "BROKEN VIOLIN STRING",
+                "description": "E-string from Evelyn's violin. Found on dressing room floor.",
+                "clueId": "string_evidence",
+                "examineText": "Professional-grade string. Breaking point shows uneven tension - possibly snapped during struggle."
+            },
+            {
+                "id": "object-2",
+                "title": "VICTIM'S DIARY (EXCERPT)",
+                "description": "Personal diary recovered from dressing room.",
+                "clueId": "victim_diary",
+                "examineText": "Last entry (Nov 14): 'He won't accept it's over. The music haunts us both. Tomorrow ends it, one way or another.'"
+            }
+        ]
+    },
+    
+    "witnesses": [
+        {
+            "id": "witness-1",
+            "name": "Carlos Mendoza",
+            "role": "Stage Manager",
+            "age": 52,
+            "employment": "Royal Symphony Hall (15 years)",
+            "image": "stage-manager.png",
+            "initialAttitude": "Cooperative but nervous",
+            "clueId": "stage_manager_testimony",
+            
+            "testimony": "I've worked here 15 years, never seen anything like it. About 30 minutes before curtain, I heard arguing from Evelyn's dressing room. A man's voice, sounded angry. When I knocked to check, she said 'Everything's fine, Carlos' but her voice was shaky. I should have insisted...",
+            
+            "questions": [
+                {
+                    "id": "q1-1",
+                    "text": "What did the man look like?",
+                    "answer": "I only saw his back as he walked away - tall, broad shoulders, wearing a dark coat. He had distinctive salt-and-pepper hair, mostly grey. Moved like a musician, you know? That confident walk.",
+                    "revealsClue": "arguing_man_description"
+                },
+                {
+                    "id": "q1-2",
+                    "text": "Had you seen him before?",
+                    "answer": "Maybe... there was a man with similar hair at last month's concert, arguing with Evelyn then too. He was asking for backstage access, said he was 'an old friend'. I didn't let him through.",
+                    "revealsClue": "previous_argument"
+                },
+                {
+                    "id": "q1-3",
+                    "text": "Was anything unusual backstage?",
+                    "answer": "The fire exit was propped open with a chair, which is strictly against regulations. And one of the stagehand uniforms was missing from the laundry bin. I reported it to security, but with the show starting...",
+                    "revealsClue": "propped_exit"
+                },
+                {
+                    "id": "q1-4",
+                    "text": "Who issued the 'GUEST' backstage pass?",
+                    "answer": "That was me, but... I don't remember issuing it. The signature looks like mine, but I always write the guest's name. Someone must have taken a blank pass from my office.",
+                    "revealsClue": "forged_pass"
+                }
+            ],
+            
+            "reliability": "High (corroborated by security logs)",
+            "notes": "Genuinely concerned, has no criminal record. His timeline matches security footage."
+        },
+        
+        {
+            "id": "witness-2",
+            "name": "Melissa Chen",
+            "role": "Understudy Violinist",
+            "age": 28,
+            "employment": "Royal Symphony Orchestra (3 years)",
+            "image": "understudy.png",
+            "initialAttitude": "Hesitant, protective of victim",
+            "clueId": "understudy_testimony",
+            
+            "testimony": "Evelyn was... distracted all week. Not like her. She kept checking her phone and muttering about 'unfinished business'. I thought it was just pre-performance nerves, but now... She was supposed to mentor me after this season.",
+            
+            "questions": [
+                {
+                    "id": "q2-1",
+                    "text": "Did she mention any threats?",
+                    "answer": "Not directly, but she said someone was 'trying to silence her music'. She laughed it off when I asked who, said 'Just an old ghost'. But she kept looking over her shoulder.",
+                    "revealsClue": "silence_threat"
+                },
+                {
+                    "id": "q2-2",
+                    "text": "Who was she talking to on the phone?",
+                    "answer": "I overheard her say 'Adrian, it's over' once, sounding very upset. Then 'The contract is signed, there's nothing more to discuss'. She saw me listening and ended the call.",
+                    "revealsClue": "adrian_call"
+                },
+                {
+                    "id": "q2-3",
+                    "text": "Was she having problems with anyone?",
+                    "answer": "There were rumors about a dispute with Adrian Volkov, her former duet partner. He was furious about being replaced. Some said he threatened to ruin her career. But Evelyn never confirmed it.",
+                    "revealsClue": "volkov_threat"
+                },
+                {
+                    "id": "q2-4",
+                    "text": "What about her personal life?",
+                    "answer": "She was private. But... she visited Professor Aris's grave every month. Said she owed him everything. The day before she disappeared, she came back from the cemetery crying.",
+                    "revealsClue": "aris_connection"
+                }
+            ],
+            
+            "reliability": "Medium (emotional, but truthful)",
+            "notes": "Clearly admired Evelyn. May be withholding information to protect victim's privacy."
+        },
+        
+        {
+            "id": "witness-3",
+            "name": "Security Guard Perkins",
+            "role": "Night Security",
+            "age": 61,
+            "employment": "SecureGuard Ltd. (8 months)",
+            "image": "security-guard.png",
+            "initialAttitude": "Defensive",
+            "clueId": "security_testimony",
+            
+            "testimony": "I did my rounds, everything was normal. The cameras on the east wing were being serviced, so no footage there. I saw a man in a stagehand uniform around 8:45 PM, but we have lots of stagehands. Nothing unusual.",
+            
+            "questions": [
+                {
+                    "id": "q3-1",
+                    "text": "What about the stagehand you saw?",
+                    "answer": "Tall fellow, had the uniform on proper. He was carrying a violin case, heading toward the storage rooms. I figured he was moving equipment.",
+                    "revealsClue": "stagehand_violin"
+                },
+                {
+                    "id": "q3-2",
+                    "text": "Why were cameras offline?",
+                    "answer": "Scheduled maintenance. Happens once a month. Bad timing, I know. The company said they'd be fixed by 9 PM, but they weren't.",
+                    "revealsClue": "camera_maintenance"
+                },
+                {
+                    "id": "q3-3",
+                    "text": "Did anyone leave unusually late?",
+                    "answer": "A dark sedan left around 9:30 PM, took the service exit. Didn't think nothing of it - musicians work late. No, I didn't get the plate.",
+                    "revealsClue": "dark_sedan"
+                }
+            ],
+            
+            "reliability": "Low (poor observation, cameras conveniently offline)",
+            "notes": "Recently hired, minimal training. May have missed important details."
+        }
+    ],
+    
+    "suspects": [
+        {
+            "id": "suspect-1",
+            "name": "Adrian Volkov",
+            "age": 42,
+            "occupation": "Concert Violinist (formerly with Evelyn Vance)",
+            "motive": "Professional jealousy, financial loss from broken partnership",
+            "opportunity": "Known to be in London, familiar with symphony hall",
+            "alibi": "Claims to have been at his hotel practicing. No witnesses.",
+            "evidenceConnections": [
+                "Threat letter mentions 'Aris' (his former teacher too)",
+                "8-minute phone call day before disappearance",
+                "Newspaper shows public anger about replacement",
+                "Witnesses describe man matching his appearance"
+            ],
+            "suspicionLevel": 85,
+            "image": "volkov.png"
+        },
+        {
+            "id": "suspect-2",
+            "name": "Unknown Stagehand",
+            "age": "Unknown",
+            "occupation": "Possibly current/former symphony employee",
+            "motive": "Unknown - possibly paid by someone else",
+            "opportunity": "Access to uniform, knowledge of backstage",
+            "alibi": "None",
+            "evidenceConnections": [
+                "Blue fibers match stagehand uniform",
+                "Security guard saw stagehand with violin case",
+                "Missing uniform from laundry",
+                "Access to backstage passes"
+            ],
+            "suspicionLevel": 60,
+            "image": "unknown-stagehand.png"
+        },
+        {
+            "id": "suspect-3",
+            "name": "Carlos Mendoza",
+            "age": 52,
+            "occupation": "Stage Manager",
+            "motive": "None apparent - clean record, well-liked",
+            "opportunity": "All-access, last to see her",
+            "alibi": "Accounted for by multiple crew members during critical time",
+            "evidenceConnections": [
+                "Issued (or didn't issue) backstage pass",
+                "First to 'discover' disappearance",
+                "Knowledge of camera maintenance schedule"
+            ],
+            "suspicionLevel": 25,
+            "image": "stage-manager.png"
+        }
+    ],
+    
+    "solution": {
+        "culprit": "Adrian Volkov",
+        "culpritId": "suspect-1",
+        "motive": "Professional jealousy and revenge for being replaced in the symphony season",
+        "method": "Posed as a stagehand, convinced Evelyn to meet him in a storage room under the pretense of discussing their mentor's legacy, then incapacitated her and transported her out via service exit.",
+        "accomplice": "None (acted alone)",
+        "weapon": "None (used chloroform based on trace chemicals found later)",
+        "disposal": "Kept her sedated in a rented warehouse for 2 days, then released her unharmed when he realized he couldn't go through with his plan. She chose to disappear permanently due to trauma.",
+        
+        "requiredClues": [
+            "threat_letter",
+            "blue_fibers", 
+            "adrian_call",
+            "annotated_program",
+            "stagehand_violin"
+        ],
+        
+        "explanation": "Adrian Volkov, devastated by being replaced after 5 years of partnership, planned to ruin Evelyn's career. He stole a stagehand uniform, forged a backstage pass, and confronted her after the performance. The reference to Professor Aris (their shared mentor) in the threat letter was personal - Aris had chosen Evelyn as his 'musical heir'. Volkov never intended to kill her, only to scare her into quitting music. When she fought back (breaking her violin string), he panicked and used chloroform. He kept her sedated but released her when guilt overcame him. Evelyn, traumatized and fearing further attacks, chose to disappear and start a new life.",
+        
+        "outcome": "Evelyn Vance was found alive in 1992 living under a new name in Scotland. She refused to press charges, wanting to leave the past behind. Volkov was convicted of kidnapping and served 8 years. He never played violin again.",
+        
+        "pointsBreakdown": {
+            "culpritIdentification": 40,
+            "motiveExplanation": 30,
+            "methodReconstruction": 20,
+            "evidenceConnection": 10,
+            "bonusPerfect": 20
+        },
+        
+        "maximumPoints": 120
+    },
+    
+    "hints": [
+        {
+            "level": 1,
+            "cost": 25,
+            "text": "Examine the concert program annotations carefully. 'He's here tonight' suggests someone specific was in the audience."
+        },
+        {
+            "level": 2, 
+            "cost": 50,
+            "text": "The blue fibers are key - they match a specific uniform. Who had access to that uniform?"
+        },
+        {
+            "level": 3,
+            "cost": 75,
+            "text": "Connect the threat letter's mention of 'Aris' to both Evelyn and her main rival. They shared this mentor."
+        },
+        {
+            "level": 4,
+            "cost": 100,
+            "text": "The 8-minute phone call the day before was crucial. What was discussed that made Evelyn so determined to 'end it'?"
+        }
+    ],
+    
+    "redHerrings": [
+        {
+            "clue": "Open window",
+            "explanation": "Although open, forensic analysis showed no evidence of entry or exit through the window. Likely opened for air."
+        },
+        {
+            "clue": "Missing money in purse", 
+            "explanation": "Initial report error - all money was accounted for upon re-examination."
+        },
+        {
+            "clue": "Security guard's incompetence",
+            "explanation": "While negligent, he wasn't involved in the crime. Camera maintenance was genuinely scheduled."
+        }
+    ],
+    
+    "metadata": {
+        "caseDesigner": "Detective Division",
+        "dateCreated": "2024-01-15",
+        "lastModified": "2024-01-15",
+        "basedOn": "Inspired by real missing musician cases",
+        "difficultyAdjustments": [
+            "BEGINNER: All core clues are discoverable",
+            "INTERMEDIATE: 2 critical clues hidden",
+            "EXPERT: Witnesses may lie, false clues added"
+        ],
+        "tags": ["disappearance", "musician", "jealousy", "cold-case"]
+    }
+}
